@@ -4,12 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Final Project Batch 7 - Aris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <title>Portofolio Aris Anggara Putra</title>
+    
 </head>
 <body>
-    <h1>Final Project Batch 7 - Aris Anggara Putra</h1>
-    <img src="images/cat-logo.jpg" width="400">
+    <nav>
+        <!-- HOME -->
+        <div id="home">
+            
+            <div class="logo" >
+                <a href="#home">Aris Portofolio</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#awards">Award</a></li>
+                    <li><input class="dark-mode" type="checkbox" onclick="ubahDark()"></li>
+                        
+                
+                </ul>
+                
+                
+                
+            </div>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Section About -->
+    <div class="wrapper">
+        <section id="about">
+            <img src="images/aris.png"/>
+            <div class="kolom">
+                <h2>About Me</h2>
+                <p class="deskripsi">Hallo Semua 👋, saya</p>
+                <h1>Aris Anggara Putra</h1>
+                <p class="job">Web Developer dan BackEnd Developer<p>
+                    <p>Berkreasi dengan potongan code merupakan hal yang keren!!!</p>
+                    <button class="button" onclick="bukaGithub()">Github</button>
+                </div>
+                
+                
+            </section>
+            
+            <section id="experiences">
+                <div class="tengah">
+                    <div class="kolom">
+                        <h2 class="tengah">Pengalaman</h2>
+                        <p style="font-size: 25px;">Beberapa pengalaman yang saya miliki</p>        
+                    </div>
+                    
+                    <div class="pengalaman">
+                        <div class="kartu-pengalaman">
+                            <p>WEB DEVELOPER</p><br>
+                            <span>Magang 2021-2022</span><br>
+                            <span style="font-size: 20px; text-decoration: underline;">Membuat aplikasi keuangan</span>
+                            
+                            <ul>
+                                <li>Membuat Fitur CRUD</li>
+                                <li>Membuat Fitur Pembukuan</li>
+                                <li>Membuat Fitur Laporan Keuangan</li>
+                                <li>Membuat Fitur Pengaturan Akun</li>
+                                <li>Membuat Fitur Cetak Laporan Keuangan</li>
+                            </ul>
+                        </div>
+                        <div class="kartu-pengalaman">
+                            <p>IT SUPPORT</p><br>
+                            <span>PKL 2017</span><br>
+                            <span style="font-size: 20px; text-decoration: underline;">Mengerjakan segala kebutuhan IT</span>
+                            
+                            <ul>
+                                <li>Troubleshoot Komputer dan jaringan</li>
+                                <li>Menginstall aplikasi yang dibutuhkan kantor</li>
+                                <li>Membackup data harian</li>
+                                <li>Menjaga komputer agar aman dari virus</li>
+                            </ul>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section id="education">
+                <div class="kolom">
+                    <h2>Education</h2>
+                    <p class="job" style="font-size: 20px; margin-bottom: 5px;">Universitas Pamulang (2021)</p>
+                    <span>Jurusan Teknik Informatika</span>
+                    <br><span>IPK : 3.32</span>
+                    <p class="job" style="font-size: 20px; margin-bottom: 5px; margin-top: 20px;">SMKN 5 Kota Tangerang</p>
+                    <span>Jurusan Rekayasa Perangkat Lunak</span>
+                    
+                </div>
+                <img src="images/edu.png" alt="education">
+            </section>
+            
+            <section id="skills">
+                <div class="tengah">
+                    <div class="kolom">
+                        
+                        <h2>Skills</h2>
+                        <p style="font-size: 25px;">
+                            Berikut ini beberapa skill yang saya miliki
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-list">
+                            <img src="images/php.png" alt="skills">
+                            <h2>PHP</h2>
+                            <p></p>
+                        </div>
+                        <div class="card-list">
+                            <img src="images/laravel.png" alt="skills">
+                            <h2>Framework Laravel</h2>
+                        </div>
+                        <div class="card-list">
+                            <img class="gambar" src="images/js.png" alt="skills">
+                            <h2>JavaScript</h2>
+                        </div>
+                        <div class="card-list">
+                            <img src="images/mysql.png" alt="skills">
+                            <h2>MySQL</h2>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section id="interests">
+                <img src="images/tech.png" alt="tech">
+                <div class="kolom">
+                    <h2>Interests</h2>
+                    <p class="deskripsi" style="color: #A0C49D;">
+                       Minat saya pada dunia IT antara lain
+                    </p>
+                    <br>
+                    <ul>
+                        <li style="font-weight: bold;">Software Development</li>
+                        <span>Menjadi seorang software development minat paling utama saya terutama dalam pengembangan web</span>
+                        <li style="font-weight: bold;">Networking</li>
+                        <span>Saya juga tertarik dalam jaringan komputer didalamnya saya dapat belajar tentang kemanan networking</span>
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Section Awards -->
+            <section id="awards">
+                <div class="tengah">
 
+                    <div class="kolom">
+                        <h2>Award</h2>
+                        <p>Untuk saat ini saya belum memiliki awards yang layak untuk diakui, namun saya yakin kedepan nya saya akan mendapatkan banyak awards tidak untuk saya saja, namun untuk tempat saya bekerja yaitu perusahaan anda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    
+    
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+               
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p class="fas fa-envelope">arisanggara72@gmail.com</p><br>
+                    <p class="fab fa-whatsapp">Whatsapp : 089674761189</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                   <a href="https://facebook.com/aris4p"  target="_blank"><i class='fab fa-facebook-f' style='font-size:48px;color:#3B5998'></i></a>
+                   <a href="https://www.linkedin.com/in/aris4p/"  target="_blank"><i class='fab fa-linkedin-in' style='font-size:48px;color:#0E76a8; margin-left: 20px;'></i></a>
+                   <a href="https://www.instagram.com/iamkungkang/"  target="_blank"><i class='fab fa-instagram' style='font-size:48px;color:#0E76a8; margin-left: 20px;'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <div class="wrapper">
+            <p>Copyright &copy <span id="copyrightYear">
+
+            </span> Aris Anggara Putra- All right Reserved</p>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

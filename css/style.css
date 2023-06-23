@@ -1,3 +1,580 @@
-h1 {
-    background-color: aliceblue;
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Moirai One', cursive;
+    background-color: #F9FBE7;
+    overflow-x: hidden;
+}
+
+/* FONT GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+
+.wrapper {
+    width: 1300px;
+    margin: auto;
+    position: relative;
+    
+}
+
+.dark {
+    background-color: #333333;
+    color: #fcfcfc;
+}
+
+.dark-mode {
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative;
+   
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+    float: right;
+   
+}
+
+.dark-mode:checked {
+    background-color: #3664ff;
+}
+.dark-mode::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+.dark-mode:checked::before {
+    transform: translateX(20px);
+}
+
+#about {
+    margin-top: 50px;
+}
+
+#home {
+    display: flex;
+    
+    justify-content: space-around;
+    
+    
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: 'Moirai One', cursive;
+    color: #A0C49D;
+    margin: auto;
+}
+
+
+
+
+
+nav {
+    width: 100%;
+    
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #F0EDD4;
+    z-index: 1;
+    border-bottom: 1px solid #F0EDD4;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+nav ul li {
+    display: flex;
+    
+}
+
+nav ul li a {
+    color: #A0C49D;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+#about img {
+    border-radius: 50%;
+    
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #A2CDB0;
+}
+
+.kolom .job {
+    font-size: 30px;
+    font-family: 'Moirai One', cursive;
+    color: #85A389;
+    
+}
+
+.kolom p {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Moirai One', cursive;
+    margin-top: 10px;
+    
+}
+
+h1 {
+    font-family: 'Moirai One', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 20;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #A0C49D;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.pengalaman {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.kartu-pengalaman {
+    width: 25%;
+    margin: 0 auto;
+    
+}
+
+.kartu-pengalaman img {
+    width: 80%;
+}
+
+.kartu-pengalaman p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #9BABB8;
+}
+
+.kartu-pengalaman ul {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.kartu-pengalaman ul li {
+    list-style: none;
+    position: relative;
+    padding: 3px 0 2px 25px;
+    font-family: 'Moirai One', cursive;
+}
+
+.kartu-pengalaman ul li::before {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 2px; 
+    border: solid 8px #b18310;
+    border-radius: 8px;
+}
+
+.kartu-pengalaman ul li::after {
+    content: ""; 
+    position: absolute; 
+    left: 5px;
+    top: 5px;
+    width: 3px;
+    height: 6px;
+    border: solid #083761;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.button:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.button:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+#education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#education img {
+    width: 50%;
+    height: 50%;
+    
+    
+}
+.deskripsi {
+    font-family: 'Moirai One', cursive;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-list {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.card-list img {
+    
+    width: 50%;
+    height: 50%;
+    
+}
+
+.card .card-list h2 {
+    font-family: 'Moirai One', cursive;
+    
+}
+
+#interests {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interests img {
+    width: 50%;
+    height: 50%;
+    
+}
+
+#contact {
+    background-color: #C4D7B2;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 40%;
+    margin: 20px auto;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+/* Facebook */
+
+h3 {
+    font-family: 'Moirai One', cursive ;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #6c806a;
+    width: 100%;
+    line-height: 50px;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    margin-top: 10;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin: 30px;
+    position: relative;
+    
+    
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Menu Animation */
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #A0C49D;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width:991.98px){
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .wrapper {
+        width: 90%;
+    }
+    
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    
+    section {
+        display: block;
+    }
+    
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-list {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pengalaman {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .kartu-pengalaman {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        
+        
+    }
+
+    
+    
+    nav ul  {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25%;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #F0EDD4;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: 1s;
+        opacity: 1;
+    }
+    
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    nav ul li {
+        height: 45px;
+    }
+    
+    .dark-mode {
+        display: none;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
