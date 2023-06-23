@@ -1,3 +1,7 @@
 https://github.com/aris4p/prakerja-final-batch7
 
+<<<<<<< HEAD
 https://aris4p-prakerja.netlify.app/
+=======
+https://github.com/aris4p/prakerja-final-batch7
+>>>>>>> 24a3fcf1ba02cf2c4ef41d35ff08e7ee9d0ba42c
